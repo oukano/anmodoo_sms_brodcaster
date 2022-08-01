@@ -12,7 +12,7 @@ export default {
   name: 'App',
   data() {
     return {
-      message: "type your message here",
+      message: "iwa hna n3amass kteb tiixt nta3k",
       to: "0691049548\n0624108928\n0691049548"
     }
   },

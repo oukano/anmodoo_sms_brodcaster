@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       message: "type your message here",
-      to: "0691049548\n 0624108928\n 0691049548"
+      to: "0691049548\n0624108928\n0691049548"
     }
   },
 

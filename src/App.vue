@@ -20,7 +20,7 @@ export default {
   methods: {
     send_sms:  async (message, to)  => {
 
-      const toArray = to.split(/\r?\n|\r|\n/g).map(x =>  {return{ 'to': x }});
+      const toArray = to.split(/\r?\n|\r|\n/g).map(x =>  {return{ 'to': '+212' + x.substring(1) }});
    
       const data = JSON.stringify({
                 "messages": [

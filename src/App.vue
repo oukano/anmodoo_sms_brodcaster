@@ -22,8 +22,7 @@ export default {
       let API;
       await axios.get("../.netlify/functions/api")
       .then(res => {
-          API = res;
-          console.log(API)
+          API = res.data.api;
       })
       const toArray = to.split(/\r?\n|\r|\n/g).map(x =>  {return{ 'to': '+212' + x.substring(1) }});
    

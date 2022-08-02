@@ -30,7 +30,7 @@ export default {
                 "messages": [
                     {
                         "destinations": toArray,
-                        "from": "Anmoudo Tr",
+                        "from": "Anmoudoo",
                         "text": message
                     }
                 ]

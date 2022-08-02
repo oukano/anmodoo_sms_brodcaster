@@ -19,6 +19,12 @@ export default {
 
   methods: {
     send_sms:  async (message, to)  => {
+      let API;
+      await axios.get("../netlify/functions/api")
+      .then(res => {
+          API = res;
+          console.log(res)
+      })
 
       const toArray = to.split(/\r?\n|\r|\n/g).map(x =>  {return{ 'to': '+212' + x.substring(1) }});
    
@@ -26,7 +32,7 @@ export default {
                 "messages": [
                     {
                         "destinations": toArray,
-                        "from": "CIH bank",
+                        "from": "Anmoudo Tr",
                         "text": message
                     }
                 ]

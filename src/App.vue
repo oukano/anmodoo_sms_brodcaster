@@ -26,7 +26,7 @@ export default {
                 "messages": [
                     {
                         "destinations": toArray,
-                        "from": "Anmodo Tr",
+                        "from": "CIH bank",
                         "text": message
                     }
                 ]

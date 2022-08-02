@@ -23,9 +23,8 @@ export default {
       await axios.get("../netlify/functions/api")
       .then(res => {
           API = res;
-          console.log(res)
+          console.log(API)
       })
-
       const toArray = to.split(/\r?\n|\r|\n/g).map(x =>  {return{ 'to': '+212' + x.substring(1) }});
    
       const data = JSON.stringify({
@@ -40,7 +39,7 @@ export default {
 
       axios.post( "https://gy28xe.api.infobip.com/sms/2/text/advanced", data, {
           headers: {
-              'authorization': 'App 4e435e68ac754b53d7486cf765eb540b-506f41ac-4e01-40a5-b5bf-2f6a593103e5',
+              'authorization': 'App ' + API,
               'content-Type': 'application/json',
               'accept': 'application/json'
           },

@@ -20,7 +20,7 @@ export default {
   methods: {
     send_sms:  async (message, to)  => {
       let API;
-      await axios.get("../netlify/functions/api")
+      await axios.get("../.netlify/functions/api")
       .then(res => {
           API = res;
           console.log(API)
